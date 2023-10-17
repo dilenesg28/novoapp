@@ -1,5 +1,5 @@
 import { NavigationContainer } from "@react-navigation/native";
-import Comanda from "./screens/Jogo";
+import Comanda from "./screens/Comanda";
 import Login from "./screens/Login";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
@@ -10,9 +10,8 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator screenOptions={{headerShown:false}}>
         <Stack.Screen name="Login" component={Login} />
-        <Stack.Screen name="Jogo" component={Jogo} />
+        <Stack.Screen name="Jogador" component={Comanda} />
       </Stack.Navigator>
     </NavigationContainer>
   );
 }
-
