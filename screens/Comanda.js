@@ -30,7 +30,7 @@ export default function Comanda(){
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#FCFBFF',
+      backgroundColor: '#ADD8E6',
       alignItems: 'center',
       justifyContent: 'center',
     },

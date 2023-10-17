@@ -6,9 +6,9 @@ import Input from '../components/input';
 export default function Login({navigation}) {
   return (
     <View style={styles.container}>
-      <Image style={styles.image} source={require('../assets/home.jpg')} />
-      <Text>Sistema</Text>
-      <Text style={styles.title}>Comanda</Text>
+      <Image style={styles.image} source={require('../assets/home.ico')} />
+      <Text>Bingo</Text>
+      <Text style={styles.title}>Jogador</Text>
 
       <Input placeholder='e-mail'/>
       <Input placeholder='senha' secureTextEntry/>
@@ -28,7 +28,7 @@ export default function Login({navigation}) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FCFBFF',
+    backgroundColor: '#A9A9A9',
     alignItems: 'center',
     justifyContent: 'center',
   },
