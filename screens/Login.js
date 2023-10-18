@@ -13,7 +13,7 @@ export default function Login({navigation}) {
       <Input placeholder='e-mail'/>
       <Input placeholder='senha' secureTextEntry/>
 
-      <Button onPress={() => navigation.navigate('Comanda')}>
+      <Button onPress={() => navigation.navigate('Jogador')}>
         Entrar
       </Button>
       
@@ -60,4 +60,5 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: 0,
   }
-});
+})
+;
