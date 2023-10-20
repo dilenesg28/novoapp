@@ -31,7 +31,11 @@ export default function Jogo({navigation}){
 const styles = StyleSheet.create({
     container: {
       flex: 1,
+<<<<<<< HEAD:screens/Jogo.js
       backgroundColor: ['#6959CD' ],
+=======
+      backgroundColor: '#ADD8E6',
+>>>>>>> 2f9a0792c025c7fc30ba09da91f2d434ad0c2fcc:screens/Comanda.js
       alignItems: 'center',
       justifyContent: 'center',
     },
