@@ -6,14 +6,14 @@ import Input from '../components/input';
 export default function Login({navigation}) {
   return (
     <View style={styles.container}>
-      <Image style={styles.image} source={require('../assets/home.jpg')} />
+      <Image style={styles.image} source={require('../assets/home.png')} />
       <Text>Sistema</Text>
-      <Text style={styles.title}>Comanda</Text>
+      <Text style={styles.title}>Jogo</Text>
 
       <Input placeholder='e-mail'/>
       <Input placeholder='senha' secureTextEntry/>
 
-      <Button onPress={() => navigation.navigate('Comanda')}>
+      <Button onPress={() => navigation.navigate('Jogo')}>
         Entrar
       </Button>
       
@@ -28,18 +28,18 @@ export default function Login({navigation}) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FCFBFF',
+    backgroundColor:'#32CD32',
     alignItems: 'center',
     justifyContent: 'center',
   },
   title: {
-    color: '#121A2C',
+    color: '#121A2C',    
     fontSize: 34,
     fontWeight: 'bold',
   },
   input: {
     backgroundColor: '#FFF',
-    borderColor: 'gray',
+    borderColor: 'black',
     borderWidth: 1,
     padding: 8,
     borderRadius: 4,

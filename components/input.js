@@ -8,9 +8,13 @@ export default function Input({...props}){
 
 const styles = StyleSheet.create({
     input: {
-        backgroundColor: '#808080',
-        borderColor: 'gray',
-        borderWidth: 1,
+        backgroundColor: '#BDB76B',
+        borderColor: 'black',
+        borderWidth: 8,
+        borderColor: 'transparent', // Cor transparente
+        borderStyle: 'ridge', // Estilo da borda
+        
+        borderWidth: 5,
         padding: 8,
         borderRadius: 4,
         marginTop: 16,
