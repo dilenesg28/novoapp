@@ -1,11 +1,12 @@
-import { Image, Text, View, TouchableOpacity, StyleSheet } from 'react-native';
+import { Image, Text, View, TouchableOpacity } from 'react-native';
+import { styles } from '../style';
 
-export default function CardTribos({ produto }) {
+export default function CardProduto({ produto }) {
     
     return (
-        <View style={styles.times}>
+        <View style={styles.pedidos}>
 
-            <View style={styles.cardTribos}>
+            <View style={styles.cardProduto}>
                 <Image style={styles.thumb} source={{ uri: produto.imagePath }} />
 
                 <View style={styles.produtoData}>
@@ -28,85 +29,3 @@ export default function CardTribos({ produto }) {
         </View>
     )
 }
-
-
-const styles = StyleSheet.create({
-
-    box: {
-        borderColor: '#121A2C',
-        borderWidth: 1,
-        borderRadius: 4,
-        padding: 8,
-      },
-      times: {
-        width: '100%',
-      },
-      pedidoData:{
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-      },
-      pedidoDataTotal: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        borderTopWidth: 1,
-      },
-      cardTribos: {
-        borderColor: '#121A2C55',
-        borderWidth: 1,
-        borderRadius: 4,
-        padding: 8,
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        gap: 10,
-        marginVertical: 5,
-      },
-      produtoData: {
-        flex: 1,
-        alignSelf: 'flex-start',
-      },  
-      thumb: {
-        width: 50,
-        height: 50,
-        borderRadius: 4,
-      },
-      price: {
-        color: '#29A035',
-        fontSize: 18,
-      },
-      spinner: {
-        flexDirection: 'row',
-        backgroundColor: '#D9D9D9',
-        borderRadius: 999,
-      },
-      spinnerMinus: {
-        textAlign: 'center',
-        //backgroundColor: '#E9E9E9',
-        backgroundColor:'#00CED1',
-        borderRadius: 999,
-        width: 24,
-        height: 24,
-        lineHeight: 24,
-        fontWeight: 'bold',
-      },
-      spinnerPlus: {
-        textAlign: 'center',
-        backgroundColor: '#121A2C',
-        borderRadius: 999,
-        width: 24,
-        height: 24,
-        fontWeight: 'bold',
-        lineHeight: 24,
-        color: '#FFF',
-      },
-      spinnerValue: {
-        textAlign: 'center',
-        width: 24,
-        height: 24,
-        lineHeight: 24,
-      },
-      scroll: {
-       width: '100%',
-      }
-    
-    })

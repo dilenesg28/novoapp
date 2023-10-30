@@ -1,43 +1,31 @@
-import { StyleSheet, Text, View } from "react-native";
-import Button from "../components/button";
-import Input from "../components/input";
+import { MaterialIcons } from '@expo/vector-icons';
+import { Text, TextInput, TouchableOpacity, View } from "react-native";
 
-export default function Jogo({navigation}){
-    return(
+import { styles } from '../style.js';
+import { useContext } from 'react';
+import { AuthContext } from '../context/AuthContext.js';
 
-            <View style={styles.container}>
-
+export default function Comanda({navigation}) {
+    const {username} = useContext(AuthContext)
+    return (
+        <View style={styles.containerBetween}>
+            <View style={styles.header}>
                 <View>
                     <Text>Olá,</Text>
-                    <Text>Login</Text>
+                    <Text style={styles.title}>{username}</Text>
                 </View>
-
-                <View>
-                    <Input />
-                    <Button onPress={() => navigation.navigate("Produtos")}>confirmar</Button>
-                </View>
-
-                <Text>
-                    Digite o sua senha de acesso 
-                    para iniciar suas apostas
-                </Text>
-
+                <MaterialIcons name="exit-to-app" size={24} color="black" />
             </View>
 
+            <View>
+                <TextInput style={styles.input} placeholder="Comanda" />
+                <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Produtos')}>
+                    <Text style={styles.buttonText}>confirmar</Text>
+                </TouchableOpacity>
+            </View>
+
+            <Text>Digite o código da comanda para iniciar um pedido</Text>
+
+        </View>
     )
 }
-
-
-const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-<<<<<<< HEAD:screens/Jogo.js
-      backgroundColor: ['#6959CD' ],
-=======
-      backgroundColor: '#ADD8E6',
->>>>>>> 2f9a0792c025c7fc30ba09da91f2d434ad0c2fcc:screens/Comanda.js
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-})                           
-

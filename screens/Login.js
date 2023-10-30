@@ -1,78 +1,46 @@
-import { StatusBar } from 'expo-status-bar';
-import { Image, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
-import Button from '../components/button';
-import Input from '../components/input';
+import { Image, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { styles } from '../style';
+import { useContext, useState } from 'react';
+import { AuthContext } from '../context/AuthContext';
 
 export default function Login({navigation}) {
-  return (
-    <View style={styles.container}>
-<<<<<<< HEAD
-      <Image style={styles.image} source={require('../assets/home.png')} />
-      <Text>Sistema</Text>
-      <Text style={styles.title}>Jogo</Text>
-=======
-      <Image style={styles.image} source={require('../assets/home.ico')} />
-      <Text>Bingo</Text>
-      <Text style={styles.title}>Jogador</Text>
->>>>>>> 2f9a0792c025c7fc30ba09da91f2d434ad0c2fcc
+    const {login} = useContext(AuthContext)
+    const [email, setEmail] = useState("")
+    const [senha, setSenha] = useState("")
+    const [erro, setErro] = useState("")
 
-      <Input placeholder='e-mail'/>
-      <Input placeholder='senha' secureTextEntry/>
+    async function handleLogin(){
+        if (await login({email, senha})){
+            navigation.navigate('Comanda')
+        }else{
+            setErro("email ou senha inválido")
+        }
+    }
 
-<<<<<<< HEAD
-      <Button onPress={() => navigation.navigate('Jogo')}>
-=======
-      <Button onPress={() => navigation.navigate('Jogador')}>
->>>>>>> 2f9a0792c025c7fc30ba09da91f2d434ad0c2fcc
-        Entrar
-      </Button>
-      
-      <TouchableOpacity >
-        <Text>criar conta</Text>
-      </TouchableOpacity>
-      <StatusBar style="auto" />
-    </View>
-  );
+    return (
+        <View style={styles.container}>
+            <Image style={styles.imagem} source={require('../assets/burguer.jpg')} />
+            <Text>Sistema</Text>
+            <Text style={styles.title}>Comanda</Text>
+            <TextInput 
+              style={styles.input} 
+              placeholder='e-mail' 
+              value={email}
+              onChangeText={setEmail}
+            />
+            <TextInput 
+              style={styles.input} 
+              placeholder='senha' 
+              value={senha}
+              onChangeText={setSenha}
+              secureTextEntry 
+            />
+            <TouchableOpacity onPress={handleLogin}>
+                <Text style={styles.button}>entrar</Text>
+            </TouchableOpacity>
+
+            <Text style={styles.erro}>{erro}</Text>
+            
+        </View>
+    );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-<<<<<<< HEAD
-    backgroundColor:'#32CD32',
-=======
-    backgroundColor: '#A9A9A9',
->>>>>>> 2f9a0792c025c7fc30ba09da91f2d434ad0c2fcc
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  title: {
-    color: '#121A2C',    
-    fontSize: 34,
-    fontWeight: 'bold',
-  },
-  input: {
-    backgroundColor: '#FFF',
-    borderColor: 'black',
-    borderWidth: 1,
-    padding: 8,
-    borderRadius: 4,
-    marginTop: 16,
-  }, 
-  button:{
-    backgroundColor: '#121A2C',
-    color: '#FFBA26',
-    paddingVertical: 8,
-    paddingHorizontal: 48,
-    borderRadius: 4,
-    marginTop: 16,
-    marginBottom: 16
-  },
-  image: {
-    height: 200,
-    width: '100%',
-    position: 'absolute',
-    top: 0,
-  }
-})
-;
