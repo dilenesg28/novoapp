@@ -19,9 +19,9 @@ export default function Login({navigation}) {
 
     return (
         <View style={styles.container}>
-            <Image style={styles.imagem} source={require('../assets/burguer.jpg')} />
+            <Image style={styles.imagem} source={require('../assets/logo.png')} />
             <Text>Sistema</Text>
-            <Text style={styles.title}>Comanda</Text>
+            <Text style={styles.title}>Apostas</Text>
             <TextInput 
               style={styles.input} 
               placeholder='e-mail' 

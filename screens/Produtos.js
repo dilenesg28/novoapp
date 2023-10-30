@@ -7,10 +7,10 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 
 const produto = {
-    "id": 1,
-    "nome": "Bolo de Chocolate",
-    "imagePath": "https://img.freepik.com/free-photo/close-up-fancy-dessert_23-2150527565.jpg?t=st=1688655003~exp=1688658603~hmac=84829cbb20876216de8d7e408378e6b1c44686855c3d414865b445e20bb5f7b4&w=1380",
-    "preco": 8
+    "id": 5,
+    "nome": "Escolha da casa",
+    "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Anglo-American_card_suits.png/225px-Anglo-American_card_suits.png",
+    "preco": 20.99
 }
 
 export default function Produtos() {

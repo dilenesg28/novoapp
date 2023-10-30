@@ -2,47 +2,47 @@
   "produtos": [
       {
         "id": "1",
-        "nome": "Classic Burger",
-        "imagepath": "http://example.com/classic.jpg",
+        "nome": "Naipe de Copas",
+        "imagepath": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Naipe_copas.png/347px-Naipe_copas.png",
         "preco": 9.99
       },
       {
         "id": "2",
-        "nome": "Cheeseburger",
-        "imagepath": "http://example.com/cheeseburger.jpg",
-        "preco": 8.99
+        "nome": "Naipe de Ouro",
+        "imagepath": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Naipe_ouros.png/324px-Naipe_ouros.png",
+        "preco": 9.99
       },
       {
         "id": "3",
-        "nome": "Bacon Burger",
-        "imagepath": "http://example.com/bacon.jpg",
-        "preco": 10.99
+        "nome": "Naipe de Paus",
+        "imagepath": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Naipe_paus.png/300px-Naipe_paus.png",
+        "preco": 9.99
       },
       {
         "id": "4",
-        "nome": "Mushroom Burger",
-        "imagepath": "http://example.com/mushroom.jpg",
+        "nome": "Naipe de Espadas",
+        "imagepath": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Spades.svg/324px-Spades.svg.png",
         "preco": 9.99
       },
       {
         "id": "5",
-        "nome": "BBQ Burger",
-        "imagepath": "http://example.com/bbq.jpg",
-        "preco": 11.99
+        "nome": "Escolha da casa",
+        "imagepath": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Anglo-American_card_suits.png/225px-Anglo-American_card_suits.png",
+        "preco": 20.99
       }
     ],
     "usuarios": [
       { 
         "id": "1",
-        "nome": "Joao Carlos",
-        "email": "joao@fiap.com.br",
-        "senha": "1234"
+        "nome": "Cleber Dilenes",
+        "email": "rm89056@fiap.com.br",
+        "senha": "89056"
       },
       { 
         "id": "2",
-        "nome": "Maria Silva",
-        "email": "maria@fiap.com.br",
-        "senha": "4321"
+        "nome": "Hugo Leonardo",
+        "email": "rm89360@fiap.com.br",
+        "senha": "89360"
       }
     ]
 }

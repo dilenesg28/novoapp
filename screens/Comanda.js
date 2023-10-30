@@ -24,7 +24,7 @@ export default function Comanda({navigation}) {
                 </TouchableOpacity>
             </View>
 
-            <Text>Digite o código da comanda para iniciar um pedido</Text>
+            <Text>Digite o código da comanda para iniciar sua jogada</Text>
 
         </View>
     )
